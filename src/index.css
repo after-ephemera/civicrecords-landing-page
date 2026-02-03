@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Colors - Modern Technical */
+  --color-primary: #0a0a0a;
+  /* Deep Matte Black */
+  --color-secondary: #00f0ff;
+  /* Cyan Highlight */
+  --color-border: #222;
+  /* Subtle Border */
+
+  --color-text-main: #ededed;
+  /* Soft White */
+  --color-text-muted: #888888;
+  /* Tech Gray */
+  --color-grid: rgba(255, 255, 255, 0.03);
+
+  /* Typography */
+  --font-main: 'JetBrains Mono', monospace;
+  /* Clean tech font */
+  --font-code: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --header-height: 70px;
+  --container-width: 1100px;
+
+  /* Effects */
+  --glow: 0 0 10px rgba(0, 240, 255, 0.3);
+  /* Much softer glow, used sparingly */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-primary);
+  color: var(--color-text-main);
+  /* Subtle Tech Grid */
+  background-image:
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+/* Removed CRT Scanline Overlay */
+body::after {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: -0.02em;
+  /* Tighter, more modern */
+  color: var(--color-text-main);
+}
+
+p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-text-main);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: var(--font-main);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Scrollbar - Clean */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+/* Utility: Text Highlight */
+.highlight {
+  color: var(--color-secondary);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,48 @@
+.waitlist-form {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 450px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.email-input {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-text-main);
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.email-input::placeholder {
+    color: #555;
+}
+
+.waitlist-btn {
+    background: var(--color-text-main);
+    color: var(--color-primary);
+    border: none;
+    padding: 0 1.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.waitlist-btn:hover {
+    background: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
