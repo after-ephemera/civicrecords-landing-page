@@ -67,3 +67,16 @@
     border-color: var(--color-text-muted);
     background: #151515;
 }
+
+@media (max-width: 768px) {
+    .nav {
+        display: none; /* Hide standard nav on mobile */
+    }
+    .btn-primary {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.75rem;
+    }
+    .logo {
+        font-size: 0.9rem;
+    }
+}

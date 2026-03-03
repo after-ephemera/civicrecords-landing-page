@@ -80,4 +80,27 @@
         flex-direction: column;
         gap: 4rem;
     }
+    .hero-title {
+        font-size: 3.5rem;
+    }
+    .hero-visual {
+        margin-left: 0;
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 6rem 0 4rem;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    .hero-visual {
+        min-height: 300px;
+    }
 }

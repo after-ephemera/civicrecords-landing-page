@@ -26,6 +26,12 @@
     gap: 2.5rem;
 }
 
+@media (max-width: 576px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 .feature-card {
     /* Glassmorphism Card */
     background: rgba(255, 255, 255, 0.02);

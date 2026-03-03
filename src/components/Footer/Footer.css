@@ -42,3 +42,14 @@
 .footer-brand p::before {
     display: none;
 }
+
+@media (max-width: 576px) {
+    .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .footer-container {
+        gap: 1.5rem;
+    }
+}
